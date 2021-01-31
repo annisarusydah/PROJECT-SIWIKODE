@@ -1,0 +1,197 @@
+#siwikode
+{
+    padding-top: 70px;
+}
+    
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+
+.list_wisata
+{
+    background-color: white;
+    overflow: hidden;
+}
+ 
+.list_wisata h2
+{
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+ 
+.list-wisata
+{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 431px;
+    margin-left: 8px;
+}
+ 
+.list-wisata:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 17px gainsboro;
+}
+ 
+.list-wisata img
+{
+	width: 95%;
+    height: 170px;
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+.list-wisata h4
+{
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.page-footer 
+{
+    position: relative;
+    top: 0;
+}
+
+.footer-copyright 
+{
+    padding: 0;
+    padding-bottom: 90px;
+    color: #fff;
+    background-color: rgb(24, 23, 23);
+}
+
+.pb-3, .py-3 
+{
+    padding-bottom: 1rem !important;
+}
+
+.list_wisata1
+{
+    overflow: hidden;
+}
+
+.list-wisata1
+{
+    border: 2px solid gainsboro;
+    padding: 10px;
+    float: left;
+    max-width: 620px;
+    margin-left: 10px;
+}
+ 
+.list-wisata1:hover
+{
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+
+.list-wisata1 img
+{
+	width: 95%;
+    height: 170px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.list-wisata2
+{
+    float: left;
+    width: 431px;
+    margin-left: 10px;
+}
+
+.list-wisata2 img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.list_wisata8
+{
+    overflow: hidden;
+}
+
+.list-wisata8
+{
+    border: 2px solid gainsboro;
+    float: left;
+    width: 431px;
+    margin-left: 10px;
+}
+
+.list-wisata8 img
+{
+	width: 100%;
+    height: 170px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#list-wisata img
+{
+	width: 95%;
+    height: 170px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#detail-wisata img
+{
+    width: 200px;
+    height: 150px;
+    display: block;
+    padding-left: 1px;
+    margin-bottom: 2px;
+}
+
+#detail_wisata
+{
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#detail_wisata img
+{
+    width: 202px;
+    height: 230px;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+#detail_wisata2
+{
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#detail_wisata2 img
+{
+    width: 200px;
+    height: 160px;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+#kuliner
+{
+    border: 2px solid gainsboro;
+    padding: 3%;
+    padding-top: 0; 
+    padding-bottom: 1%;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: gold;
+    size: 2px;
+  }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Rekreasi</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <header class="sticky">
+        <div class="container-fluid" onclick="toggleMenu();"></div>
+            <ul>
+                <li style="padding-left: 9%;"><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="wisata_rekreasi.html" onclick="toggleMenu();">Wisata Rekreasi</a></li>
+                <li><a href="wisata_kuliner.html" onclick="toggleMenu();">Wisata Kuliner</a></li>
+                <li><a href="formregistrekreasi.html" onclick="toggleMenu();">Registrasi</a></li>
+            </ul> <br>
+            <div style="text-align: right; padding-right: 3%;"><a href="index.html">Home</a> / <a href="Admin Kelola Data Wisata Kuliner.html">Admin</a> / Edit Data Rekreasi Kuliner</div> 
+            <div style="text-align: center;">
+                <h2>
+                    Sistem Informasi Wisata Kota Depok - SIWIKODE
+                </h2>
+            </div>
+        </div> 
+    </header>
+
+    <div class="container" style="padding-top: 0;">
+        <form action="">
+            <fieldset>
+                <legend>Data Rekreasi Setu Jatijajar</legend><br>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="name">Nama</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="input" name="name" value="Setu Jatijajar">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="wisata">Jenis Wisata</label>
+                    </div>
+                    <div class="col-2">
+                        <select name="wisata" class="select">
+                            <option>Setu</option>
+                            <option>Taman</option>
+                            <option>Masjid</option>
+                            <option>Kolam Renang / Waterpark</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="rating">Rating</label>
+                    </div>
+                    <div class="col-2"> &nbsp;
+                        <i id="rating1" class="fa fa-star fa-lg"></i>
+                        <i id="rating1" class="fa fa-star fa-lg"></i>
+                        <i id="rating1" class="fa fa-star fa-lg"></i>
+                        <i id="rating1" class="fa fa-star fa-lg"></i>
+                        <i id="rating" class="fa fa-star fa-lg"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="kontak">Kontak Person</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="input" name="kontak" value="Pedro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="web">Alamat Web</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="url" class="input" name="web" value="">
+                    </div>
+                </div><br>
+                <button style="background-color: red;" type="reset" class="button">Batal</button>
+                <button style="background-color: green;" type="submit" class="button">Simpan</button>
+            </fieldset>
+        </form>
+        </div>
+
+    <footer class="page-footer font-small special-color-dark pt-3" style="padding-top: 2.6%;">
+        <div class="footer-copyright text-left py-3" style="padding-left: 2%;">
+                Develop By Mahasiswa @STT-NF 2020
+        </div>
+    </footer>
+      <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4"-->
+</body>
+    <!-- Fontawesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</html>

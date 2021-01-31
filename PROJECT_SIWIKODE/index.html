@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWIKODE</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m2-auto" style="text-align: left;">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="wisata_rekreasi.html">Wisata Rekreasi</a>
+                    <a class="nav-link active" href="wisata_kuliner.html">Wisata Kuliner</a>
+                    <a class="nav-link active" href="formregistrekreasi.html">Registrasi</a>
+                    <a class="nav-link active" href="#our_team">Our Team</a>
+                </div>
+            </div>
+            <div>
+                <div class="navbar-nav">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-backdrop" style="color: white;">Login</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-backdrop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" onsubmit="return validationAdmin()">
+                  <div class="modal-content" style="background-color: rgb(162, 204, 243);">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="exampleModalLabel">LOGIN</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form name="form">
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Username :</label>
+                          <input type="text" class="form-control" name="username" placeholder="Masukkan Username">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Password :</label>
+                          <input type="password" class="form-control" name="password" placeholder="Masukkan Password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        <button class="btn btn-primary" onclick="validationAdmin()">Login</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="siwikode">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">
+                    Sistem Informasi Wisata Kota Depok - SIWIKODE
+                </h3>
+            </div>
+        </div>
+        <hr>
+        <div class="list_wisata" style="padding-bottom: 3%;">
+            <h4 style="text-align: center;">Wisata Rekreasi & Kuliner Unggulan Kota Depok</h4><br><br>
+
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-xs-4">
+                    <div class="card" style="width: 23rem;">
+                        <h5 class="card-title text-center">D'KANDANG AMAZING FARM</h5>
+                        <img class="card-img-top" alt="D'Kandang" src="D’Kandang 15.jpg" style="max-height: 235px;"/>
+                        <div class="card-body">
+                        <p class="card-text" style="text-align: justify;">Nikmati serunya wisata sekaligus belajar, bermain dan tantangan di dunia Peternakan dan Pertanian di D'Kandang Amazing Farm.</p>
+                        <a href="wisata_rekreasi1.html" class="btn btn-primary">Detail</a>
+                        </div>
+                    </div>
+                    </div>
+                    &nbsp; &nbsp; 
+                    <div class="col-xs-4">
+                        <div class="card" style="width: 23rem;">
+                            <h5 class="card-title text-center">ALADIN DEPOK FANTASI WATERPARK</h5>
+                            <img class="card-img-top" alt="Aladin" src="aladin 9.jpg" style="max-height: 235px;"/>
+                            <div class="card-body">
+                            <p class="card-text" style="text-align: justify;">Waterpark ini salah satu tempat rekreasi air pertama dan terbesar yang berada di kawasan Grand Depok City, Kota Depok.</p>
+                            <a href="wisata_rekreasi2.html" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    &nbsp; &nbsp; 
+                    <div class="col-xs-4">
+                        <div class="card" style="width: 23rem;">
+                            <h5 class="card-title text-center">SAUNG TALAGA</h5>
+                            <img class="card-img-top" alt="saung talaga" src="saung telaga 1.jpg" style="max-height: 235px;"/>
+                            <div class="card-body">
+                            <p class="card-text" style="text-align: justify;">Saung Talaga adalah restoran yang menawarkan makanan tradisional Indonesia, dengan konsep menyatu dengan alam.</p>
+                            <a href="wisata_kuliner1.html" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div id="our_team" class="col-md-12">
+        <h3 class="text-center" style="color: gray;">
+            Our Team
+        </h3>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="card" style="width: 12rem;">
+                    <img class="card-img-top" src="a.PNG" style="max-height: 130px;"/>
+                    <div class="card-body">
+                        <h6 class="card-title text-center">Abdul Rozak</h6>
+                        <p class="card-text" style="text-align: center;">0110119061</p>
+                    </div>
+                </div>
+            </div>
+            &nbsp; &nbsp; 
+            <div class="col-xs-2">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="nisa.jpeg" style="max-height: 130px;"/>
+                <div class="card-body">
+                    <h6 class="card-title text-center">Annisa Rusydah</h6>
+                    <p class="card-text" style="text-align: center;">0110119067</p>
+                </div>
+            </div>
+            </div>
+            &nbsp; &nbsp;
+            <div class="col-xs-2">
+                <div class="card" style="width: 12rem;">
+                    <img class="card-img-top" src="ubadah.jpeg" style="max-height: 130px;"/>
+                    <div class="card-body">
+                        <h6 class="card-title text-center">Ja'far Muhammad Ubadah</h6>
+                        <p class="card-text" style="text-align: center;">0110117036</p>
+                    </div>
+                </div>
+                </div>
+                &nbsp; &nbsp;
+                <div class="col-xs-2">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="hadi.jpeg" style="max-height: 130px;"/>
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Joko Tri Aryanto Hadi</h6>
+                            <p class="card-text" style="text-align: center;">0110119053</p>
+                        </div>
+                    </div>
+                    </div>
+                &nbsp; &nbsp;  
+                <div class="col-xs-2">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="redi.jpeg" style="max-height: 130px;"/>
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Redi Ramdhani</h6>
+                            <p class="card-text" style="text-align: center;">0110119003</p>
+                        </div>
+                    </div>
+                    </div>
+                &nbsp; &nbsp; 
+        </div>
+    </div> <br> 
+
+    <footer class="page-footer font-small special-color-dark" >
+        <div class="footer-copyright text-left py-3" style="padding-left: 2%;">
+            Develop By Mahasiswa @STT-NF 2020
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="otentikasi.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4"-->
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Kelola Data Wisata Rekreasi</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <header class="sticky">
+        <div class="container-fluid" onclick="toggleMenu();"></div>
+            <ul>
+                <li style="padding-left: 9%;"><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="wisata_rekreasi.html" onclick="toggleMenu();">Wisata Rekreasi</a></li>
+                <li><a href="wisata_kuliner.html" onclick="toggleMenu();">Wisata Kuliner</a></li>
+                <li><a href="formregistrekreasi.html" onclick="toggleMenu();">Registrasi</a></li>
+            </ul> <br>
+            <div style="text-align: right; padding-right: 3%;"><a href="index.html">Home</a> / <a href="Admin Kelola Data Wisata Kuliner.html">Admin</a> / Kelola Wisata Rekreasi</div> 
+            <div style="text-align: center;">
+                <h2>
+                    Sistem Informasi Wisata Kota Depok - SIWIKODE
+                </h2>
+            </div>
+        </div> 
+    </header>
+
+    <fieldset style="margin: 2.3%;">
+        <legend>Kelola Data Wisata Rekreasi</legend><br>
+        <table border="5" height="100px">
+            <tr height="30px">
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jenis Wisata</th>
+                <th>Rating</th>
+                <th>Kontak Person</th>
+                <th>Upload Foto</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Taman Gurame</td>
+                <td>Taman</td>
+                <td>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg" style="color: rgb(199, 197, 197);"></i>
+                </td>
+                <td>Rebecca</td>
+                <td type="url">Link Upload</td>
+                <td><a href="Edit_Rekreasi_1.html">View</a> | <a href="Edit_Rekreasi_1.html">Edit</a> | <a href="Delete_Rekreasi_1.html">Delete</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Setu Jatijajar</td>
+                <td>Setu</td>
+                <td>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i id="rating1" class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg" style="color: rgb(199, 197, 197);"></i>
+                </td>
+                <td>Pedro</td>
+                <td type="url">Link Upload</td>
+                <td><a href="Edit_Rekreasi_2.html">View</a> | <a href="Edit_Rekreasi_2.html">Edit</a> | <a href="Delete_Rekreasi_2.html">Delete</a></td>
+            </tr>
+        </table><br>
+        <a href="formregistrekreasi.html" type="submit" class="button1" style="background-color: blue;">
+            <i class="fa fa-plus fa-lg"></i>
+             Tambah Baru
+        </a>
+    </fieldset>
+
+    <footer class="page-footer font-small special-color-dark pt-3" style="padding-top: 11;">
+        <div class="footer-copyright text-left py-3" style="padding-left: 2%;">
+                Develop By Mahasiswa @STT-NF 2020
+        </div>
+    </footer>
+      <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4"-->
+</body>
+    <!-- Fontawesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</html>
